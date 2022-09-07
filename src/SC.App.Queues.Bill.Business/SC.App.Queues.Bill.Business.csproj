@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>local;dev;preview;live</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.1.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Area\SC.App.Queues.Bill.Business.Area.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Courier\SC.App.Queues.Bill.Business.Courier.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Credit\SC.App.Queues.Bill.Business.Credit.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Customer\SC.App.Queues.Bill.Business.Customer.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Inventory\SC.App.Queues.Bill.Business.Inventory.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Order\SC.App.Queues.Bill.Business.Order.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Setting\SC.App.Queues.Bill.Business.Setting.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Business.Streaming\SC.App.Queues.Bill.Business.Streaming.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Client\SC.App.Queues.Bill.Client.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Common\SC.App.Queues.Bill.Common.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Database\SC.App.Queues.Bill.Database.csproj" />
+    <ProjectReference Include="..\SC.App.Queues.Bill.Queue\SC.App.Queues.Bill.Queue.csproj" />
+  </ItemGroup>
+
+</Project>

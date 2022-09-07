@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  syncchat-app-queues-bill:
+    image: syncchat/app-queues-bill:latest
+    container_name: syncchat_app_queues_bill
+    ports:
+        - 5000:5000
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
